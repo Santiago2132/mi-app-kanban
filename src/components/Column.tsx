@@ -4,8 +4,7 @@ import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { motion } from 'framer-motion';
 import Card from './Card';
 import { Plus, Edit3, Trash2, GripVertical } from 'lucide-react';
-import { useState, useMemo, useContext } from 'react';
-import { ThemeContext } from '../contexts/ThemeContext';
+import { useState, useMemo } from 'react';
 
 interface ColumnProps {
   column: { id: string; title: string; cards: { id: string; title: string }[]; color?: string };
